@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-principal: #4E7468;
+    --cor-da-letra: white;
+    --cor-terciaria: #b6c3c1;
+    --cor-quaternaria: #3b4847;
+    --cor-hover: #3C6357;
+    --cor-borda: black;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-da-letra);
+}
+
+.cabecalho {
+    background-color: var(--cor-principal);
+}
+
+.cabecalho__menu {
+    display: flex;
+    text-align: right;
+}
+
+.cabecalho__menu__links__link {
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho__menu__links__link:hover {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__imagens {
+    padding: 2% 20%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--cor-da-letra);
+}
+
+.nav-link:hover {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10% 10%;
+}
+
+.card {
+    margin: 1%;
+    background-color: var(--cor-principal);
+}
+
+.card:hover {
+    background-color: var(--cor-hover);
+}
+
+.card-body {
+    height: 250px;
+}
+
+.card-body {
+    color: var(--cor-da-letra);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+#destacaTexto {
+    color: var(--cor-terciaria);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    background-color: var(--cor-borda);
+}
+
+.video-container-videos {
+    padding: 10px;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 10% 10%;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+    text-decoration: none;
+    color: var(--cor-da-letra);
+}
+
+.botaoInscrever {
+    border: 2px solid var(--cor-da-letra);
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px 0;
+    background-color: rgb(233, 74, 74);
+    color: var(--cor-da-letra);
+    font: var(--fonte-principal);
+}
+
+.botaoInscrever:hover {
+    background-color: var(--cor-hover);
+}
+
+.modal {
+    color: black;
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    padding: 0;
+}
+
+.rodape1 {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    padding: 2%;
+}
+
+.rodape2 {
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-da-letra);
+    padding: 2%;
+
+}
+
+.rodape__titulo {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rodape__subtitulo {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rodape__email {
+    row-gap: 100px;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 16px;
+}
+
+.rodape__copyright {
+    font-size: 16px;
+}
